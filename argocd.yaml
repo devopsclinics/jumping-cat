@@ -5,11 +5,11 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: default
+    namespace: jumping
     server: https://kubernetes.default.svc
   source:
     path: .   # Update this to match the directory in your repo where Kubernetes manifests will be stored
-    repoURL: https://github.com/devopsclinics/color-app.git
+    repoURL: https://github.com/devopsclinics/jumping-cat.git
     targetRevision: main
   project: default
   syncPolicy:
